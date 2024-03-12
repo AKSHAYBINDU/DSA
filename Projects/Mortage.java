@@ -23,5 +23,7 @@ public class Mortage {
                 * (monthlyIR * Math.pow(1 + monthlyIR, noOfPayments)) / (Math.pow(1 + monthlyIR, noOfPayments) - 1);
         String mortageFormatted = NumberFormat.getCurrencyInstance().format(mortage);
         System.out.println("Mortage: " + mortageFormatted);
+
+        scanner.close();
     }
 }
